@@ -112,4 +112,92 @@ public class LoginSecurityConfig extends AbstractConfig {
     public LoginSecurityConfig(ConfigurationModule module) {
         super(module);
     }
+
+    public boolean isPasswordRequired() {
+        return passwordRequired;
+    }
+
+    public boolean isRegisterCaptcha() {
+        return registerCaptcha;
+    }
+
+    public boolean isRegisterConfirmPassword() {
+        return registerConfirmPassword;
+    }
+
+    public int getMaxLoginTries() {
+        return maxLoginTries;
+    }
+
+    public boolean isMatchUsernameExact() {
+        return matchUsernameExact;
+    }
+
+    public int getPasswordMinLength() {
+        return passwordMinLength;
+    }
+
+    public int getPasswordMaxLength() {
+        return passwordMaxLength;
+    }
+
+    public boolean isBlindness() {
+        return blindness;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public boolean isHideInventory() {
+        return hideInventory;
+    }
+
+    public boolean isFilterSpecialChars() {
+        return filterSpecialChars;
+    }
+
+    public int getUsernameMinLength() {
+        return usernameMinLength;
+    }
+
+    public int getUsernameMaxLength() {
+        return usernameMaxLength;
+    }
+
+    public boolean isUseCommandShortcut() {
+        return useCommandShortcut;
+    }
+
+    public String getLoginCommandShortcut() {
+        return loginCommandShortcut;
+    }
+
+    public String getRegisterCommandShortcut() {
+        return registerCommandShortcut;
+    }
+
+    public boolean isUpdaterEnabled() {
+        return updaterEnabled;
+    }
+
+    public String getUpdaterChannel() {
+        return updaterChannel;
+    }
+
+    public int getSessionTimeout() {
+        return sessionTimeout;
+    }
+
+    public int getLoginTimeout() {
+        return loginTimeout;
+    }
+
+    public int getLoginMessageDelay() {
+        return loginMessageDelay;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
 }
