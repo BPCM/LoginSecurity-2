@@ -17,4 +17,16 @@ public class LoginSecurityDatabase {
         this.inventoryRepository = new InventoryRepository(plugin, dataSource);
         this.locationRepository = new LocationRepository(plugin, dataSource);
     }
+
+    public ProfileRepository getProfileRepository() {
+        return profileRepository;
+    }
+
+    public InventoryRepository getInventoryRepository() {
+        return inventoryRepository;
+    }
+
+    public LocationRepository getLocationRepository() {
+        return locationRepository;
+    }
 }
